@@ -62,7 +62,7 @@
 
 </table>
 
-@section scripts{
+@section scripts {
     <script language="javascript" type="text/javascript">
         $(document).ready(function () {
             $("i[data-toggle='star']")
@@ -74,7 +74,7 @@
 
                     $ajax({
                         method: starSet ? "Delete" : "Put",
-                        url: "/api/note" + noteId + "/star",
+                        url: "api/note/" + noteId + "/star",
                         data: null
                     })
                     .done(function (r) {
