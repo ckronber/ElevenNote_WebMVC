@@ -16,6 +16,7 @@ namespace ElevenNote.Services
         {
             _userId = userId;
         }
+
         public bool CreateNote(NoteCreate model)
         {
             var entity = new Note()
